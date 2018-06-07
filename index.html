@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+        <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        div {
+        border: 1px solid #4CAF50;
+        padding: 5px;
+        }
+
+        .clearfix {
+        overflow: auto;
+        }   
+
+        p {
+            color: black;
+        }
+
+        .top {
+            float:left;
+            width: 100%;
+            padding:5px;
+            text-align:center;
+        }
+
+        .left {
+            float:left;
+            width:60%;
+            padding:5px;
+            text-align:center;
+        }
+        .right {
+            float:left;
+            width:40%;
+            padding:5px;
+            margin-top:0px;
+            text-align:center;
+        }
+        .bottom {
+            float:left;
+            width: 100%;
+            padding:5px;
+            text-align:center;
+        }
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8; 
+            cursor: pointer; 
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        </style>
+
+        <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+        </script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="clearfix">
+                <p>
+                    this should be the top. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Felis eget nunc lobortis mattis. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Id semper risus in hendrerit gravida rutrum. Mattis aliquam faucibus purus in massa. Bibendum at varius vel pharetra vel turpis nunc.
+                </p>
+            </div>
+        </div>
+        <div class="left">
+            <div class="clearfix">
+                    <div class="row">
+                        <div class="container">
+                            <img id="expandedImg" style="width:100%" src="show.jpg">
+                        </div>
+                            <div class="column">
+                                <img src="show.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="show1.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="show2.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="show3.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                    </div>
+                <p>
+                        this should be the left. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Felis eget nunc lobortis mattis. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Id semper risus in hendrerit gravida rutrum. Mattis aliquam faucibus purus in massa. Bibendum at varius vel pharetra vel turpis nunc.
+                </p>
+            </div>            
+        </div>
+        <div class="right">
+            <div class="clearfix">
+                <p>
+                        this should be the right. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Felis eget nunc lobortis mattis. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Id semper risus in hendrerit gravida rutrum. Mattis aliquam faucibus purus in massa. Bibendum at varius vel pharetra vel turpis nunc.
+                </p>
+            </div>            
+        </div>
+        <div class="bottom">
+            <div class="clearfix">
+                <p>
+                        this should be the bottom. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Felis eget nunc lobortis mattis. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Id semper risus in hendrerit gravida rutrum. Mattis aliquam faucibus purus in massa. Bibendum at varius vel pharetra vel turpis nunc.
+                </p>
+            </div>            
+        </div>
+
+        
+    </body>
+</html>
+    
